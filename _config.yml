@@ -1,4 +1,4 @@
 title: Chetan Shori
 description: Technical Writer
 show_downloads: true
-remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+theme: jekyll-theme-minimal
