@@ -54,11 +54,11 @@ As a seasoned technical writer in the healthcare tech space, my focus is simple:
 
 ## 🛠️ Tools & Tech Stack
 
-| Authoring & Design               | Markup & Languages        | Platforms & DevOps              |
-|----------------------------------|----------------------------|----------------------------------|
-| MadCap Flare, FrameMaker, RoboHelp | HTML5, CSS, XML, Markdown   | GitLab, GitHub, SourceTree       |
-| Adobe Illustrator, InDesign, SnagIT | JSON, YAML                  | Confluence, JIRA, SharePoint     |
-| CorelDRAW, Photoshop             |                             | MS Office 365, DITA, Agile       |
+| Authoring & Design               | Markup & Languages        | Platforms & DevOps              | Extra Tools             |
+|----------------------------------|----------------------------|----------------------------------|----------------------------------|
+| MadCap Flare, FrameMaker, RoboHelp | HTML5, CSS, XML, Markdown   | GitLab, GitHub, SourceTree, Sublime      | Copilot, ChatGPT, Prompting       |
+| Adobe Illustrator, InDesign, SnagIT | JSON, YAML                  | Confluence, JIRA, SharePoint, TargetProcess     | Draw.io, Visio, Power Automate       |
+| CorelDRAW, Photoshop, Canva         |                             | MS Office 365, DITA, Agile       | Monday.com, MS Planner        |
 
 ---
 
@@ -82,6 +82,14 @@ I merge technical precision with artistic flair—because even the most complex 
 
 ---
 
+## 🎨 Hobbies & Interests
+
+- ✈️ Traveling to new places and savoring diverse cuisines  
+- 🎧 Listening to podcasts on emerging technologies and mindfulness  
+- 🏸 Staying active through drawing, sketching, painting, swimming, badminton, and carrom
+
+---
+
 ## 🤝 Let's Connect!
 
 If you're stepping into the world of technical writing or looking to elevate your docs, I'm always open to collaborate, mentor, or meme about it.
@@ -89,12 +97,3 @@ If you're stepping into the world of technical writing or looking to elevate you
 📬 **shori.chetan@gmail.com** | 💼 [LinkedIn](https://www.linkedin.com/in/chetanshori/)
 
 > “Good documentation doesn't just explain—it empowers.”
-
-
-
-
-### Hobbies and Interests
-+ Travelling to different places and enjoy different cusines
-+ Listening to Podcasts related to new Technology and Mindfullness
-+ Stay active doing activities such as drawing, sketching, painting, swimming, and playing Badminton, Carrom.
-+ 
