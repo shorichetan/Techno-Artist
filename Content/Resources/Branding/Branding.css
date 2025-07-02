@@ -1,4 +1,4 @@
-/*<meta />*/
+﻿/*<meta />*/
 
 /* MadCap-Branding applanguage:Templates/Projects/Online/Top Navigation/ */
 
@@ -11,8 +11,7 @@
 	--Light: #DADEE1;
 	--Lightest: #FFFFFF;
 	--Medium: #A4AAAE;
-	--HeroImage: url('../Images/Hero-Image.png');
+	--HeroImage: url('../Images/HeroImage.jpg');
 	--FontFamily: Arial, Avenir, Myriad;
 	--LogoImage: url('../Images/Logo.png');
 }
-

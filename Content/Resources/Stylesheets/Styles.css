@@ -104,12 +104,12 @@ div.accent
 
 div.home-layout1
 {
-	padding: 2% 20%;
+	padding: 2% 10%;
 }
 
 div.home-layout2
 {
-	padding: 2% 20%;
+	padding: 2% 10%;
 	background-color: #FFFFFF;
 }
 
@@ -144,6 +144,7 @@ div.home-tiles::after
 	clear: both;
 }
 
+/*
 div.home-tiles > div
 {
 	float: left;
@@ -167,7 +168,7 @@ div.home-tiles > div:nth-child(3)
 {
 	width: 33.33333%;
 	margin-left: 0%;
-}
+} */
 
 div.quick-links	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
 {
@@ -233,11 +234,58 @@ div.quick-links *	/*Text-align center set to all elements within div.quick-links
 
 div.topic-hero
 {
+	position: relative;
 	padding: 8% 0;
-	background-image: url('../Images/Hero-Image.png');
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../Images/HeroImage.jpg');
 	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 	background-attachment: scroll;
+	min-height: 50vh;
 }
+
+.hero-text
+{
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	padding: 0 2rem;
+}
+
+.hero-text h1
+{
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.hero-text .subtext
+{
+	font-size: 1.4rem;
+	font-weight: 300;
+	color: #f0f0f0;
+	line-height: 1.6;
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+.subtext
+{
+	animation: fadeInUp 1.5s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+} 
 
 div.topic-hero h1
 {
@@ -773,5 +821,111 @@ body.dark-mode
 {
 	background-color: #121212;
 	color: #ffffff;
+}
+
+/* 🎯 Container that holds all the tile elements */
+
+.tileHome-container
+{
+	display: flex;
+	/* Arrange tiles in a row */
+	flex-wrap: wrap;
+	/* Allow tiles to wrap to next line */
+	gap: 20px;
+	/* Space between each tile */
+	justify-content: center;
+	/* Center the tiles horizontally */
+	padding: 20px;
+	/* Space around the entire container */
+	border: 2px solid #ddd;
+	/* Light border for subtle framing */
+	border-radius: 12px;
+	/* Soft rounded corners */
+	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+	/* Soft drop shadow */
+	background-color: #fefefe;
+	/* Light background for contrast */
+}
+
+/* 🧱 Individual tile card */
+
+.tileHome
+{
+	display: flex;
+	/* Side-by-side layout: image and content */
+	flex-direction: row;
+	/* Row-wise: image left, content right */
+	align-items: center;
+	/* Vertically center-align content */
+	width: 100%;
+	/* Full width within the container */
+	background-color: #ffffff;
+	/* White background for tile */
+	border-radius: 8px;
+	/* Rounded corners */
+	overflow: hidden;
+	/* Prevent content/image spillover */
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+	/* Subtle elevation */
+	transition: transform 0.3s ease-in-out;
+	/* Smooth hover animation */
+	border: 1px solid #e0e0e0;
+	/* Subtle tile border */
+}
+
+/* 🔍 Hover effect: slightly lift the tile on interaction */
+
+.tileHome:hover
+{
+	transform: scale(1.02);
+	/* Slight zoom for interactivity */
+}
+
+/* 🖼️ Left-side image styling */
+
+.tileHome-image
+{
+	flex: 0 0 150px;
+	/* Fixed width for image column */
+	width: 0%;
+	/* Stretch to fill tile width */
+	object-fit: cover;
+	/* Crop image nicely inside fixed box */
+}
+
+/* 📋 Right-side content container */
+
+.tileHome-content
+{
+	flex: 1;
+	/* Take remaining horizontal space */
+	padding: 15px;
+	/* Inner spacing around content */
+	text-align: left;
+	/* Left-align the text */
+}
+
+/* 🏷️ Title inside tile content */
+
+.tileHome-content h3
+{
+	margin: 0 0 10px;
+	/* Space below heading */
+	font-size: 20px;
+	/* Prominent title size */
+	color: #333;
+	/* Dark gray for better contrast */
+}
+
+/* 🧾 Description inside tile content */
+
+.tileHome-content p
+{
+	font-size: 14px;
+	/* Comfortable reading size */
+	margin: 0;
+	/* Remove default spacing */
+	color: #666;
+	/* Medium gray text */
 }
 
