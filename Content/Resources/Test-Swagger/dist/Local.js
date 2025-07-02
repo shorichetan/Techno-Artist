@@ -1,0 +1,1 @@
+﻿var local = paste your JSON/YAML Code here.

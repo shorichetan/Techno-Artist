@@ -1,0 +1,777 @@
+/*<meta />*/
+
+@import url('Pop-up.css');
+
+@import url('prism.css');
+
+@namespace MadCap url(http://www.madcapsoftware.com/Schemas/MadCap.xsd);
+
+body
+{
+	color: #45494C;
+	font-family: Arial, Avenir, Myriad;
+}
+
+/* Content */
+
+img
+{
+	border: none;
+	max-width: 100%;
+}
+
+p
+{
+	font-size: 12.0pt;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	line-height: 20pt;
+	letter-spacing: 0.25px;
+}
+
+p.table-text
+{
+	font-size: 12pt;
+}
+
+.tile-text
+{
+	color: #000000;
+}
+
+/* Generic classes */
+
+.center
+{
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+	float: none !important;
+	text-align: center;
+}
+
+/* Headings */
+
+h1
+{
+	font-weight: bold;
+	font-size: 24.0pt;
+	margin-top: 0;
+	color: #076685;
+}
+
+h2
+{
+	font-weight: bold;
+	font-size: 18.0pt;
+}
+
+h3
+{
+	font-weight: bold;
+	font-size: 14.0pt;
+}
+
+h4
+{
+	font-weight: bold;
+	font-size: 12.0pt;
+}
+
+h5
+{
+	font-weight: bold;
+	font-size: 10.0pt;
+}
+
+h6
+{
+	font-weight: bold;
+	font-size: 8.0pt;
+}
+
+/* Home page topic */
+
+.nav-search	/*Does not display search in Top Navigation for desktop*/
+{
+	display: none;
+}
+
+div.accent
+{
+	background-color: #CDE0E7;
+}
+
+div.home-layout1
+{
+	padding: 2% 20%;
+}
+
+div.home-layout2
+{
+	padding: 2% 20%;
+	background-color: #FFFFFF;
+}
+
+div.home-section
+{
+	padding: 5%;
+	border-bottom: solid 1px #DADEE1;
+}
+
+div.home-section:last-of-type
+{
+	border-bottom: none;
+}
+
+div.home-tiles	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.home-tiles::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.home-tiles::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.home-tiles > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div.home-tiles > div:nth-child(1)
+{
+	width: 33.33333%;
+	margin-left: 0%;
+}
+
+div.home-tiles > div:nth-child(2)
+{
+	width: 33.33333%;
+	margin-left: 0%;
+}
+
+div.home-tiles > div:nth-child(3)
+{
+	width: 33.33333%;
+	margin-left: 0%;
+}
+
+div.quick-links	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.quick-links::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.quick-links::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.quick-links > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div.quick-links > div:nth-child(1)
+{
+	width: 16.66666%;
+	margin-left: 2%;
+}
+
+div.quick-links > div:nth-child(2)
+{
+	width: 16.66666%;
+	margin-left: 3%;
+}
+
+div.quick-links > div:nth-child(3)
+{
+	width: 16.66666%;
+	margin-left: 3%;
+}
+
+div.quick-links > div:nth-child(4)
+{
+	width: 16.66666%;
+	margin-left: 3%;
+}
+
+div.quick-links > div:nth-child(5)
+{
+	width: 16.66666%;
+	margin-left: 3%;
+}
+
+div.quick-links *	/*Text-align center set to all elements within div.quick-links*/
+{
+	text-align: center;
+}
+
+div.topic-hero
+{
+	padding: 8% 0;
+	background-image: url('../Images/Hero-Image.png');
+	background-size: cover;
+	background-attachment: scroll;
+}
+
+div.topic-hero h1
+{
+	color: #DADEE1;
+	font-size: 48pt;
+	text-align: center;
+}
+
+html.home-topic	/*Used on Home.htm topic for styles set only on the home topic*/
+{
+	
+}
+
+html.home-topic .main-section > .outer-row	/*Overrides padding set in the skin*/
+{
+	max-width: 100%;
+	padding: 0;
+}
+
+img.home-tile
+{
+	max-width: 50%;
+}
+
+/* Links */
+
+a
+{
+	color: #076685;
+}
+
+a:link
+{
+	color: #076685;
+}
+
+a:visited
+{
+	color: #076685;
+}
+
+a.home-tiles
+{
+	color: #000000;
+	font-size: 13pt;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+MadCap|dropDown
+{
+	border-bottom: 1px solid #DADEE1;
+	mc-image-position: left;
+	mc-image-spacing: 10px;
+	mc-open-image: url('../Images/Minus.png');
+	mc-closed-image: url('../Images/Plus.png');
+	padding: 10px 0;
+}
+
+MadCap|dropDownBody
+{
+	padding: 10px 30px 0;
+}
+
+MadCap|dropDownHotspot
+{
+	cursor: hand;
+	text-decoration: none;
+	color: #45494C;
+	font-size: 20pt;
+	font-weight: bold;
+	border-bottom: none;
+}
+
+MadCap|expandingBody
+{
+	color: #45494C;
+	font-style: italic;
+}
+
+MadCap|expandingHead
+{
+	font-style: italic;
+	font-weight: normal;
+	cursor: hand;
+	text-decoration: none;
+	color: #076685;
+}
+
+MadCap|xref
+{
+	font-weight: bold;
+	mc-format: '{para}';
+	text-decoration: underline;
+	color: #076685;
+}
+
+/* Lists */
+
+dd,
+dd p,
+dt,
+dt p,
+li,
+li p
+{
+	margin-bottom: 8px;
+	margin-top: 8px;
+}
+
+dl,
+ol,
+ul
+{
+	letter-spacing: .25px;
+	line-height: 20pt;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+/* Master pages */
+
+div.home-footer
+{
+	padding: 2% 5%;
+	background-color: #076685;
+}
+
+.home-footer-logo
+{
+	background-image: url('../Images/Logo.png');
+	background-repeat: no-repeat;
+	background-position: right center;
+	width: 400px;
+}
+
+div.side-content	/*Used on OtherTopics.flmsp for the search-bar and menu*/
+{
+	width: 300px;
+	float: right;
+	margin-left: 15px;
+	margin-bottom: 15px;
+}
+
+div.topic-layout
+{
+	padding-top: 4%;
+}
+
+MadCap|breadcrumbsProxy
+{
+	border-bottom-width: 0;
+	color: #45494C;
+}
+
+p.footer
+{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	line-height: 13pt;
+	color: #FFFFFF;
+}
+
+p.footer-sub
+{
+	color: #FFFFFF;
+	font-size: 14pt;
+	margin-top: 14px;
+}
+
+@media only screen and (max-width: 1279px)
+{
+	/* Home page topic */
+
+	.nav-search	/*Displays search in Top Navigation for tablet/mobile*/
+	{
+		display: block;
+	}
+
+	div.side-content	/*Removes search-bar and menu set in topic in tablet*/
+	{
+		display: none;
+	}
+
+	html.home-topic .nav-search	/*Will not display search in Top Navigation on home page*/
+	{
+		display: none;
+	}
+
+	html.home-topic .body-container
+	{
+		margin-left: 0;
+	}
+
+	div.quick-links > div:nth-child(1)
+	{
+		width: 24%;
+		margin-left: 0%;
+	}
+
+	div.quick-links > div:nth-child(2)
+	{
+		width: 24%;
+		margin-left: 14%;
+	}
+
+	div.quick-links > div:nth-child(3)
+	{
+		width: 24%;
+		margin-left: 14%;
+	}
+
+	div.quick-links > div:nth-child(4)
+	{
+		width: 24%;
+		margin-left: 19%;
+	}
+
+	div.quick-links > div:nth-child(5)
+	{
+		width: 24%;
+		margin-left: 14%;
+	}
+
+	div.home-tiles > div:nth-child(1)
+	{
+		width: 33.33333%;
+		margin-left: 0%;
+	}
+
+	div.home-tiles > div:nth-child(2)
+	{
+		width: 33.33333%;
+		margin-left: 0%;
+	}
+
+	div.home-tiles > div:nth-child(3)
+	{
+		width: 33.33333%;
+		margin-left: 0%;
+	}
+}
+
+@media only screen and (max-width: 767px)
+{
+	/* Home page topic */
+
+	div.home-layout1,
+	div.home-layout2
+	{
+		padding: 2% 5%;
+	}
+
+	div.home-section
+	{
+		padding: 10% 0;
+	}
+
+	img.home-tile
+	{
+		max-width: 25%;
+	}
+
+	div.home-tiles > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.home-tiles > div:nth-child(2)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.home-tiles > div:nth-child(3)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.quick-links > div:nth-child(1)
+	{
+		width: 49%;
+		margin-left: 0;
+	}
+
+	div.quick-links > div:nth-child(2)
+	{
+		width: 49%;
+		margin-left: 2%;
+	}
+
+	div.quick-links > div:nth-child(3)
+	{
+		width: 49%;
+		margin-left: 0;
+	}
+
+	div.quick-links > div:nth-child(4)
+	{
+		width: 49%;
+		margin-left: 2%;
+	}
+
+	div.quick-links > div:nth-child(5)
+	{
+		width: 49%;
+		margin-left: 25.5%;
+	}
+
+	div.topic-hero
+	{
+		padding: 15% 0;
+	}
+
+	div.topic-hero h1
+	{
+		font-size: 36pt;
+	}
+
+	.home-footer-logo
+	{
+		padding: 20px;
+		background-origin: content-box;
+		background-size: contain;
+	}
+}
+
+@media print
+{
+	/* Links */
+
+	MadCap|xref
+	{
+		font-weight: normal;
+		mc-format: '{quote}{para}{quote} {pageref}';
+		text-decoration: none;
+	}
+}
+
+.tile-container
+{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 15px;
+}
+
+.tile
+{
+	width: 450px;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 15px;
+	font-size: 16px;
+	font-weight: bold;
+	color: white;
+	border-radius: 8px;
+	transition: 0.3s ease-in-out;
+}
+
+/* Styling for heading */
+
+.tile h3
+{
+	margin: 10px 0;
+	/* Add spacing */
+	font-size: 18px;
+}
+
+/* Styling for content */
+
+.tile p
+{
+	font-size: 14px;
+	margin: 5px 0;
+	font-weight: normal;
+}
+
+/* Horizontal layout (default) */
+
+.tile-container.horizontal
+{
+	flex-direction: row;
+}
+
+/* Vertical layout */
+
+.tile-container.vertical
+{
+	flex-direction: column;
+}
+
+/* Different tile colors */
+
+.tile:nth-child(1)
+{
+	background-color: #FF5733;
+}
+
+/* Red */
+
+.tile:nth-child(2)
+{
+	background-color: #33A1FF;
+}
+
+/* Blue */
+
+.tile:nth-child(3)
+{
+	background-color: #28A745;
+}
+
+/* Green */
+
+.tile:nth-child(4)
+{
+	background-color: #FFC107;
+}
+
+/* Yellow */
+
+.tile:nth-child(5)
+{
+	background-color: #6F42C1;
+}
+
+/* Purple */
+/* Different hover colors */
+
+.tile:nth-child(1):hover
+{
+	background-color: #C70039;
+}
+
+/* Dark Red */
+
+.tile:nth-child(2):hover
+{
+	background-color: #0066CC;
+}
+
+/* Dark Blue */
+
+.tile:nth-child(3):hover
+{
+	background-color: #1E7E34;
+}
+
+/* Dark Green */
+
+.tile:nth-child(4):hover
+{
+	background-color: #E0A800;
+}
+
+/* Dark Yellow */
+
+.tile:nth-child(5):hover
+{
+	background-color: #4B0082;
+}
+
+/* Dark Purple */
+
+.tab-button
+{
+	padding: 10px 15px;
+	margin-right: 5px;
+	cursor: pointer;
+	font-weight: normal;
+	border: 1px solid blue;
+	/* Blue border for all buttons */
+	color: black;
+	/* Black text for inactive buttons */
+	background-color: white;
+	/* White background for inactive buttons */
+	transition: background-color 0.3s, color 0.3s;
+}
+
+.tab-button:hover
+{
+	background-color: blue;
+	color: white;
+}
+
+.tab-button.active-tab
+{
+	background-color: blue;
+	/* Blue background for active tab */
+	color: white;
+	/* White text for active tab */
+	font-weight: bold;
+	/* Make active tab bold */
+}
+
+.tab-content
+{
+	padding: 10px;
+	border: 1px solid #ccc;
+	margin-top: 10px;
+	width: 100%;
+	opacity: 1;
+	/* Ensure first tab content is visible initially */
+	transition: opacity 0.5s ease-in-out;
+}
+
+.tab-content.hidden
+{
+	opacity: 0;
+}
+
+:root
+{
+	--bg-color-light: #ffffff;
+	--text-color-light: #000000;
+	--bg-color-dark: #121212;
+	--text-color-dark: #ffffff;
+}
+
+body.light-mode
+{
+	background-color: #ffffff;
+	color: #000000;
+}
+
+body.dark-mode
+{
+	background-color: #121212;
+	color: #ffffff;
+}
+
