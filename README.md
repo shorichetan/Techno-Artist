@@ -47,8 +47,8 @@ I'm a seasoned Technical Writer with over 7 years of experience crafting user-ce
 
 | Authoring        | Graphic Design     | Languages         | Other Skills                       |
 |------------------|--------------------|-------------------|------------------------------------|
-| MadCap Flare     | Photoshop, Illustrator, SnagIT | HTML5, CSS, XML, Markdown | GitHub, JIRA, Confluence, SharePoint |
-| Adobe FrameMaker | CorelDRAW          | JSON, YAML        | Agile, Perforce, MS Office         |
+| MadCap Flare     | Photoshop, Illustrator, SnagIT | HTML5, CSS, JavaScript, XML, Markdown | GitHub, Gitlab, JIRA, Confluence, SharePoint, Microsoft Automate |
+| Adobe FrameMaker | CorelDRAW          | JSON, YAML        | Pormpting, Agile, Perforce, MS Office, Copilot |
 
 ---
 
