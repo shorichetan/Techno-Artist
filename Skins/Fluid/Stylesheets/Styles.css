@@ -279,7 +279,7 @@ nav.title-bar
 	display: block;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	background-color: #076685;
+	background-color: #0d0d59;
 }
 
 nav.title-bar .menu-icon
@@ -322,7 +322,7 @@ nav.title-bar .menu-icon
 	display: flex;
 	flex: 0 1 auto;
 	order: 1;
-	min-height: 55px;
+	min-height: 58px;
 	align-self: center;
 	justify-content: flex-start;
 }
@@ -334,8 +334,8 @@ nav.title-bar .menu-icon
 	margin: 0;
 	z-index: 1;
 	display: block;
-	width: 229px;
-	height: 55px;
+	width: 154px;
+	height: 58px;
 	align-self: center;
 	background: transparent url('Images/Logo.png') no-repeat center center;
 	-pie-background: transparent url('Skins/Fluid/Stylesheets/Images/Logo.png') no-repeat center center;
@@ -985,7 +985,7 @@ div.central-dropdown-content > a:hover
 
 .menu-icon-container
 {
-	min-height: 55px;
+	min-height: 58px;
 }
 
 .off-canvas-wrapper-inner .outer-row
